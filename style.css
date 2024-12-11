@@ -1,0 +1,307 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body, select {
+    font-size: 1.8rem;
+    font-family: "Poppins", serif;
+}
+
+
+/* INDEX */
+aside {
+    grid-area: aside;
+    justify-items: center;
+}
+
+aside h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+span {
+    color:  #FF5678;
+}
+
+.content {
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 60.3rem;
+    height: 52rem;
+    grid-area: main;
+    border: .1rem solid #00000026;
+    border-radius: 1.2rem;
+    padding: 1rem;
+}
+
+main .detalhe {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 2rem;
+    line-height: 4rem;
+}
+
+main .detalhe p {
+    font-size: 1.4rem;
+}
+
+main .detalhe a {
+    color: black;
+    font-weight: 500;
+}
+
+.fa-chevron-left {
+    color: #FF5678;
+    font-size: 2.5rem;
+}
+
+.content h2 {
+    font-size: 3.6rem;
+    font-family: roboto;
+    margin: 4rem 4.2rem 2rem 6rem;
+}
+
+button {
+    display: block;
+    width: 48.9rem;
+    height: 5.5rem;
+    margin: 5rem;
+    font-size: 2.4rem;
+    border: none;
+    border-radius: 1.2rem;
+    color: #fff;   
+}
+
+/* FORM - INDEX */
+.form a {
+    text-decoration: none;
+    align-self: center;
+}
+.form .detalhe a {
+    text-decoration: underline;
+}
+
+.cadastrar {
+    background-color: #35E6E9;
+}
+
+.cadastrado {
+    background-color: #FF5678;
+}
+
+
+
+/* FORM CADASTRO */
+.new-form {
+    justify-items: center;
+    position: relative;
+}
+.new-form form{
+    display: flex;
+    flex-direction: column;
+    width: 48.9rem;
+}
+
+.new-form :is(input, select) {
+    width: 48.9rem;
+    height: 5.5rem;
+    margin: 1rem 0;
+    border: .1rem solid #00000026;
+    border-radius: 1.2rem;
+    background-color: transparent;
+}
+
+.new-form select {
+    appearance: none;
+    text-align: end;
+    padding-right: 6rem;
+}
+
+.select-div {
+    position: relative;
+}
+.select-div::after {
+    top: 02rem;
+    left: 90%;
+    font-size: 2.8rem;
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    color: #35E6E9;
+    font-weight: 900;
+    position: absolute;
+    z-index: -1;
+}
+
+.fa-chevron-down, .fa-circle-plus {
+    color: #35E6E9;
+}
+
+.buttom {
+    position: absolute; 
+    right: 2rem; 
+    top: 24.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.new-form form label {
+    align-self: start;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+
+
+
+/* CADASTRADO */
+.content-2 {
+    text-align: center;
+    margin-top: 10%;
+}
+
+header {
+    font-family: "roboto", sans-serif;
+    font-size: 6.4rem;
+    text-transform: capitalize;
+    grid-area: header;
+}
+
+.content-2 main {
+    justify-self: center;
+    width: 80.0rem;
+    height: 50.1rem;
+    padding: 2rem 6rem 01rem 6rem;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+}
+
+[data-options="entidades"] {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.4rem;
+    font-weight: 500;
+    gap: 3rem;
+    border-top: .1rem solid #00000026;
+    padding: 2rem 0; 
+}
+
+[data-options="entidades"] p {
+    color: #35E6E9;
+    border: .1rem solid #35E6E9;
+    border-radius: 1.2rem;
+    padding: .7rem 4.1rem;
+}
+[data-options="entidades"] a {
+    color: #FF5678;
+    text-decoration: underline;
+}
+
+
+/* HOVER */
+.cadastrar:hover {
+    cursor: pointer;
+    background-color: #a0f0f1;
+    color: #FF5678;
+    transform: scale(1.1);
+}
+
+.cadastrado:hover {
+    cursor: pointer;
+    background-color: #f7b1bf;
+    color: #14a7a9;
+    transform: scale(1.1);
+}
+
+.fa-circle-plus:hover {
+    transform: scale(1.5);
+    color: #a0f0f1;
+}
+
+
+/* RESPONSIVIDADE INDEX - CADASTRO - ATUAÇÃO */
+@media screen and (min-width: 1024px) {
+    .content {
+     display: grid;
+ 
+     grid-template-areas: 
+         ". aside main .";
+    }
+ }
+ 
+ @media screen and (max-width: 1023px) {
+     .content {
+      display: grid;
+  
+      grid-template-areas: 
+         "aside"
+         "main";
+     }
+  }
+ 
+ @media screen and (max-width: 459px) {
+     .content {
+      display: grid;
+      scale: .7;
+      padding: 0;
+  
+      grid-template-areas: 
+         "aside"
+          "main";
+     }
+    main {
+         width: 50rem;
+     }
+     .buttom {
+         left: 100%;
+     }
+  }
+
+  
+/* RESPONSIVIDADE CADASTRADO */
+@media screen and (max-width: 1023px) {
+    .content-2 {
+        scale: .8;
+    }
+    .content-2 main {
+        max-width: auto;
+    }
+}
+ @media screen and (max-width: 700px) {
+     .content-2 {
+      scale: .6;
+     }
+     .content-2 main {
+        max-width: 50rem;
+        min-height: fit-content;
+     }
+     .content-2 h2 {
+        margin: 0;
+     }
+     .content-2 main div {
+        display: block;
+        justify-items: flex-start;
+     }
+  }
+
+  .atuacao {
+    display: block;
+    justify-items: center;
+    margin: 1rem;
+    line-height: 2.7rem;
+  }
+  .atuacao p {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
