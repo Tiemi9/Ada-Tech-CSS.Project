@@ -2,10 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
     font-size: 62.5%;
+    --default-border: .1rem solid #00000026;
+    --default-radius: 1.2rem;
 }
 
 body, select {
@@ -41,8 +44,8 @@ main {
     width: 60.3rem;
     height: 52rem;
     grid-area: main;
-    border: .1rem solid #00000026;
-    border-radius: 1.2rem;
+    border: var(--default-border);
+    border-radius:var(--default-radius);
     padding: 1rem;
 }
 
@@ -80,7 +83,7 @@ button {
     margin: 5rem;
     font-size: 2.4rem;
     border: none;
-    border-radius: 1.2rem;
+    border-radius: var(--default-radius);
     color: #fff;   
 }
 
@@ -118,8 +121,8 @@ button {
     width: 48.9rem;
     height: 5.5rem;
     margin: 1rem 0;
-    border: .1rem solid #00000026;
-    border-radius: 1.2rem;
+    border: var(--default-border);
+    border-radius:var(--default-radius);
     background-color: transparent;
 }
 
@@ -183,7 +186,6 @@ header {
     width: 80.0rem;
     height: 50.1rem;
     padding: 2rem 6rem 01rem 6rem;
-    box-sizing: border-box;
     text-wrap: nowrap;
 }
 
@@ -200,7 +202,7 @@ header {
 [data-options="entidades"] p {
     color: #35E6E9;
     border: .1rem solid #35E6E9;
-    border-radius: 1.2rem;
+    border-radius: var(--default-radius);
     padding: .7rem 4.1rem;
 }
 [data-options="entidades"] a {
