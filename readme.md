@@ -1,4 +1,4 @@
-# Santander Tech+ - Ada 
+# Santander Tech+ & Ada Tech
 
 > Projeto proposto - módulo CSS
 
