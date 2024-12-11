@@ -5,7 +5,7 @@
 
 ![preview](/assets/preview.png)
 
-[Clique aqui para acessar!!👈](https://tiemi9.github.io/)
+[Clique aqui para acessar!!👈](https://tiemi9.github.io/Ada-Tech-CSS.Project/)
 
 ## 📡 Tecnologias
 
